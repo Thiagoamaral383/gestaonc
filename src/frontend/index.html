@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de NCs</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Gestão de NCs</h1>
+    <form id="form-nc">
+      <input type="text" name="ug" placeholder="UG" required />
+      <input type="text" name="ugr" placeholder="UGR" required />
+      <input type="date" name="data_nc" required />
+      <input type="text" name="n_nc" placeholder="Nº NC" required />
+      <input type="text" name="pi" placeholder="PI" required />
+      <input type="text" name="nd" placeholder="ND" required />
+      <textarea name="descricao" placeholder="Descrição"></textarea>
+      <input
+        type="text"
+        name="responsaveis"
+        placeholder="Responsáveis"
+        required
+      />
+      <input
+        type="number"
+        name="valor"
+        placeholder="Valor"
+        step="0.01"
+        required
+      />
+      <button type="submit">Cadastrar NC</button>
+    </form>
+
+    <table id="table-ncs">
+      <thead>
+        <tr>
+          <th>UG</th>
+          <th>UGR</th>
+          <th>Data</th>
+          <th>Nº NC</th>
+          <th>PI</th>
+          <th>ND</th>
+          <th>Descrição</th>
+          <th>Responsáveis</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
